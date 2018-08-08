@@ -1,4 +1,4 @@
-<div class='main-nav'>
+<!--<div class='main-nav'>
     <div class='navbar navbar-inverse'>
         <div class='navbar-header'>
             <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
@@ -27,7 +27,27 @@
                         <span class='glyphicon glyphicon-th-list'></span> Fetch data
                     </a>
                 </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/Contact-form']">
+                        <span class='glyphicon glyphicon-th-list'></span> Contact Form
+                    </a>
+                </li>
             </ul>
         </div>
+<img src="../../../../wwwroot/dist/images/logo.png" />
     </div>
-</div>
+</div>-->
+<div class="smLogo"><img src="{{'~/~/~/~/wwwroot/dist/images/sm-logo.png'}}"></div>
+<nav class="navbar p-0">
+
+    <ul class="navbar-nav">
+        <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Purchase</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Sale</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="ledger-calenders.html">General Ledger</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Inventory</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Production</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Fixed Asset</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="HR-form.html">Human Resources</a> </li>
+    </ul>
+</nav>

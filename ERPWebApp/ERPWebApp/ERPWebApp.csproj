@@ -20,6 +20,24 @@
     <Content Remove="ClientApp\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ClientApp\app\app.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\dist\font-awesome\4.5.0\css\vssver.scc" />
+    <None Include="wwwroot\dist\font-awesome\4.5.0\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\dist\font-awesome\4.5.0\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\dist\font-awesome\4.5.0\fonts\vssver.scc" />
+    <None Include="wwwroot\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\dist\js\jquery-2.2.3.min.js" />
+    <None Include="wwwroot\dist\js\jquery.CongelarFilaColumna.js" />
+    <None Include="wwwroot\dist\js\multiselect.js" />
+    <None Include="wwwroot\dist\js\script.js" />
+  </ItemGroup>
+
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">

@@ -1,16 +1,179 @@
-<h1>Hello, world!</h1>
-<p>Welcome to your new single-page application, built with:</p>
-<ul>
-    <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-    <li><a href='https://angular.io/'>Angular</a> and <a href='http://www.typescriptlang.org/'>TypeScript</a> for client-side code</li>
-    <li><a href='https://webpack.github.io/'>Webpack</a> for building and bundling client-side resources</li>
-    <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
-</ul>
-<p>To help you get started, we've also set up:</p>
-<ul>
-    <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
-    <li><strong>Server-side prerendering</strong>. For faster initial loading and improved SEO, your Angular app is prerendered on the server. The resulting HTML is then transferred to the browser where a client-side copy of the app takes over.</li>
-    <li><strong>Webpack dev middleware</strong>. In development mode, there's no need to run the <code>webpack</code> build tool. Your client-side resources are dynamically built on demand. Updates are available as soon as you modify any file.</li>
-    <li><strong>Hot module replacement</strong>. In development mode, you don't even need to reload the page after making most changes. Within seconds of saving changes to files, your Angular app will be rebuilt and a new instance injected into the page.</li>
-    <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and the <code>webpack</code> build tool produces minified static CSS and JavaScript files.</li>
-</ul>
+<div class="container-fluid gridBody " id="form2">
+    <div class="center-block">
+        <div class="panel-group">
+            <div class="panel active">
+                <div class="panel-head">
+                    <h4 class="panel-title">
+                        <h6>General</h6>
+                    </h4>
+                </div>
+                <div class="">
+                    <div class="formBody clearfix top-border">
+                        <form>
+                            <div class="pull-left col-6 col-md-6">
+                                <div class="form-inline">
+                                    <label for="vendor">Vendor Account:</label>
+                                    <input type="text" class="form-control" id="vendor" name="vendor" placeholder="Vendor Account">
+                                </div>
+                                <div class="form-inline">
+                                    <label for="record">Record Type:</label>
+                                    <input type="text" class="form-control" id="record" name="record" placeholder="Record Type">
+                                </div>
+                                <div class="form-inline">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                </div>
+
+                            </div>
+
+                            <div class="pull-right col-6 col-md-6">
+                                <div class="form-inline">
+                                    <label for="address">Address Books:</label>
+                                    <select class="form-control" id="address" name="address">
+                                        <option>Select Address</option>
+                                        <option>Address 1</option>
+                                        <option>Address 2</option>
+                                        <option>Address 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="language">Language:</label>
+                                    <select class="form-control" id="language" name="language">
+                                        <option>Select Language</option>
+                                        <option>Language 1</option>
+                                        <option>Language 2</option>
+                                        <option>Language 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="group">Group:</label>
+                                    <select class="form-control" id="group" name="group">
+                                        <option>Select Group</option>
+                                        <option>Group 1</option>
+                                        <option>Group 2</option>
+                                        <option>Group 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="panel panel-default clearfix">
+                <div class="panel-head">
+                    <div class="panel-title">
+                        <h6>Addresses</h6>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="formBody clearfix top-border">
+                        <form>
+                            <div class="pull-left col-6 col-md-6">
+
+
+                                <div class="form-inline">
+                                    <label for="country">Country:</label>
+                                    <select class="form-control" id="country" name="country">
+                                        <option>Select Country</option>
+                                        <option>India</option>
+                                        <option>USA</option>
+                                        <option>UK</option>
+                                        <option>Sri Lanka</option>
+                                        <option>Australia</option>
+                                    </select>
+                                </div>
+                                <div class="form-inline">
+                                    <label for="city">City:</label>
+                                    <select class="form-control" id="city" name="city">
+                                        <option>Select City</option>
+                                        <option>City 1</option>
+                                        <option>City 2</option>
+                                        <option>City 3</option>
+                                        <option>City 4</option>
+                                        <option>City 5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="pull-right col-6 col-md-6">
+                                <div class="form-inline">
+                                    <label for="pin">Pin:</label>
+                                    <input type="text" class="form-control" id="pin" name="pin" placeholder="Enter Pin">
+                                </div>
+                                <div class="form-inline">
+                                    <label for="state">State:</label>
+                                    <select class="form-control" id="state" name="state">
+                                        <option>Select State</option>
+                                        <option>State 1</option>
+                                        <option>State 2</option>
+                                        <option>State 3</option>
+                                        <option>State 4</option>
+                                        <option>State 5</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+                            <!--  <div class="pull-left col-12 col-md-12">
+                                   <div class="form-inline">
+                                     <label for="address" class="col-2 col-md-2 p-0">Address:</label>
+                                     <textarea class="form-control col-10 col-md-10" id="textarea" placeholder="Enter Address"></textarea>
+                                   </div>
+                               </div>  -->
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel panel-default clearfix">
+                <div class="panel-head">
+                    <div class="panel-title">
+                        <h6>Contact Information</h6>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="formBody clearfix top-border">
+                        <form>
+                            <div class="pull-left col-6 col-md-6">
+                                <div class="form-inline">
+                                    <label for="contact">Contact:</label>
+                                    <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact Details">
+                                </div>
+
+                            </div>
+
+                            <div class="pull-right col-6 col-md-6">
+                                <div class="form-inline">
+                                    <label for="address">Contact Books:</label>
+                                    <select class="form-control" id="contact1" name="contact">
+                                        <option>Select Contact Address</option>
+                                        <option>Contact 1</option>
+                                        <option>Contact 2</option>
+                                        <option>Contact 3</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="buttonCon ">
+            <button type="submit" class="btn templateBg">Submit</button>
+            <button type="submit" class="btn templateBg">Cancel</button>
+        </div>
+    </div>
+
+</div>
