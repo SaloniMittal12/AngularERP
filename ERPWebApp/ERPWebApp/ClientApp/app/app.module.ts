@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -16,7 +18,9 @@ import { ContactComponent } from './components/contact/contact.component';
         CounterComponent,
         FetchDataComponent,
         HomeComponent,
-        ContactComponent
+        ContactComponent,
+        FooterComponent,
+        HeaderComponent
     ],
     imports: [
         CommonModule,
@@ -28,6 +32,7 @@ import { ContactComponent } from './components/contact/contact.component';
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'Contact-form', component: ContactComponent },
+            { path: 'footer', component: FooterComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
