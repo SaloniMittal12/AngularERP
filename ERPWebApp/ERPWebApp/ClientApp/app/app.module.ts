@@ -1,3 +1,5 @@
+/// <reference path="components/hr/hr-area/hr-area.component.ts" />
+/// <reference path="components/hr/hr-area/hr-area.component.ts" />
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +13,8 @@ import { CounterComponent } from './components/counter/counter.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HrAreaComponent } from './components/hr/hr-area/hr-area.component';
+import { PayrollAreaComponent } from './components/payroll/payroll-area/payroll-area.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -20,7 +24,9 @@ import { HeaderComponent } from './components/header/header.component';
         HomeComponent,
         ContactComponent,
         FooterComponent,
-        HeaderComponent
+        HeaderComponent,
+        HrAreaComponent,
+        PayrollAreaComponent
     ],
     imports: [
         CommonModule,
@@ -33,6 +39,8 @@ import { HeaderComponent } from './components/header/header.component';
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'Contact-form', component: ContactComponent },
             { path: 'footer', component: FooterComponent },
+            { path: 'hr-area', component: HrAreaComponent },
+            { path: 'payroll-area', component: PayrollAreaComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
