@@ -1,5 +1,4 @@
-/// <reference path="components/hr/hr-area/hr-area.component.ts" />
-/// <reference path="components/hr/hr-area/hr-area.component.ts" />
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HrAreaComponent } from './components/hr/hr-area/hr-area.component';
 import { PayrollAreaComponent } from './components/payroll/payroll-area/payroll-area.component';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -26,14 +26,16 @@ import { PayrollAreaComponent } from './components/payroll/payroll-area/payroll-
         FooterComponent,
         HeaderComponent,
         HrAreaComponent,
-        PayrollAreaComponent
+        PayrollAreaComponent,
+       
     ],
     imports: [
         CommonModule,
         HttpModule,
         FormsModule,
         RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
+            //{ path: '', redirectTo: 'home', pathMatch: 'full' },
+            //{ path: '', component: LoginComponent },
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
