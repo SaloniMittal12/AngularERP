@@ -49,6 +49,20 @@
         <li class="nav-item"> <a class="nav-link" [routerLink]="['/production']"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Production</a> </li>
         <li class="nav-item"> <a class="nav-link" [routerLink]="['/fixed-assets']"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Fixed Assets</a> </li>
         <li class="nav-item"> <a class="nav-link" [routerLink]="['/payroll-area']"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow">Payroll</a> </li>
-        <li class="nav-item"> <a class="nav-link" [routerLink]="['/hr-area']"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Human Resources</a> </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" [routerLink]="['/hr-area']"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Human Resources</a>
+            <div class="dropdown-menu dashboard-dropdow">
+                <a class="dropdown-item" href="organization.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Organization</a>
+                <a class="dropdown-item" href="department.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Department</a>
+                <a class="dropdown-item" href="position.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Position</a>
+                <a class="dropdown-item" href="employee.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Employee</a>
+                <a class="dropdown-item" href="recruitment.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Recruitment</a>
+                <a class="dropdown-item" href="team.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Team</a>
+                <a class="dropdown-item" href="approval.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Approval Process</a>
+                <a class="dropdown-item" href="leave-employee.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Leave Management</a>
+                <a class="dropdown-item" href="appraisal.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Appraisal</a>
+                <a class="dropdown-item" href="employee-request.html"><img src="{{'dist/images/arrow-list.png'}}" alt="arrow" class="arrow" />Employee Request</a>
+            </div>
+        </li>
     </ul>
 </nav>
