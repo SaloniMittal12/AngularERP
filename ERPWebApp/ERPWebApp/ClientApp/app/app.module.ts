@@ -12,13 +12,14 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HrAreaComponent } from './components/hr/hr-area/hr-area.component';
-import { PayrollAreaComponent } from './components/payroll/payroll-area/payroll-area.component'; 
-import { ProductionAreaComponent } from './components/production/production-area/production-area.component'; 
+import { PayrollAreaComponent } from './components/payroll/payroll-area/payroll-area.component';
+import { ProductionAreaComponent } from './components/production/production-area/production-area.component';
 import { InventoryAreaComponent } from './components/inventory/inventory-area/inventory-area.component';
-import { GeneralLedgerAreaComponent } from './components/general-ledger/general-ledger-area/general-ledger-area.component'; 
-import { PurchaseAreaComponent } from './components/purchase/purchase-area/purchase-area.component'; 
+import { GeneralLedgerAreaComponent } from './components/general-ledger/general-ledger-area/general-ledger-area.component';
+import { PurchaseAreaComponent } from './components/purchase/purchase-area/purchase-area.component';
 import { SaleAreaComponent } from './components/sales/sale-area/sale-area.component';
 import { FixedAssetsAreaComponent } from './components/fixed-assets/fixed-assets-area/fixed-assets-area.component';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -35,22 +36,24 @@ import { FixedAssetsAreaComponent } from './components/fixed-assets/fixed-assets
         PurchaseAreaComponent,
         SaleAreaComponent,
         FixedAssetsAreaComponent,
+        LoginComponent
     ],
     imports: [
         CommonModule,
         HttpModule,
         FormsModule,
         RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
+            { path: '', redirectTo: 'login', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
+            { path: 'login', component: LoginComponent },
             { path: 'Contact-form', component: ContactComponent },
             { path: 'footer', component: FooterComponent },
-            { path: 'hr-area', component: HrAreaComponent }, 
-            { path: 'payroll-area', component: PayrollAreaComponent }, 
-            { path: 'production', component: ProductionAreaComponent }, 
-            { path: 'inventory', component: InventoryAreaComponent }, 
-            { path: 'general-ledger', component: GeneralLedgerAreaComponent }, 
-            { path: 'purchase', component: PurchaseAreaComponent }, 
+            { path: 'hr-area', component: HrAreaComponent },
+            { path: 'payroll-area', component: PayrollAreaComponent },
+            { path: 'production', component: ProductionAreaComponent },
+            { path: 'inventory', component: InventoryAreaComponent },
+            { path: 'general-ledger', component: GeneralLedgerAreaComponent },
+            { path: 'purchase', component: PurchaseAreaComponent },
             { path: 'sale', component: SaleAreaComponent },
             { path: 'fixed-assets', component: FixedAssetsAreaComponent },
             { path: '**', redirectTo: 'home' }
