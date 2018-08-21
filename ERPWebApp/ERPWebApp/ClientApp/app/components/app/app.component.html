@@ -8,7 +8,7 @@
         </div>
     </div>
 </div>-->
-<div id="wrapper" *ngIf='this.router1.url !== "/login" '>
+<div id="wrapper" *ngIf='(this.router1.url !== "/login" && this.router1.url !== "/signup" && this.router1.url !== "/reset-password")'>
     <div class="container-fluid">
         <div class="row">
             <div class="col-2 col-md-2 templateBg p-0 navHeight">
@@ -27,3 +27,6 @@
     </div>
 </div>
 <router-outlet *ngIf='this.router1.url === "/login" '></router-outlet>
+<router-outlet *ngIf='this.router1.url === "/signup" '></router-outlet>
+<router-outlet *ngIf='this.router1.url === "/reset-password" '></router-outlet>
+

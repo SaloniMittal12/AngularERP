@@ -13,7 +13,7 @@ export class LoginComponent {
 
     ngOnInit() {
         this.href = this.router.url;
-        alert(this.router.url);
+       
         console.log(this.router.url);
     }
 }
