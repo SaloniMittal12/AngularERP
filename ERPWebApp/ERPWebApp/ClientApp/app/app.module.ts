@@ -7,27 +7,21 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './components/app/app.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HrAreaComponent } from './components/hr/hr-area/hr-area.component';
 import { PayrollAreaComponent } from './components/payroll/payroll-area/payroll-area.component';
-import { LoginComponent } from './components/login/login.component';
 @NgModule({
     declarations: [
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
         HomeComponent,
         ContactComponent,
         FooterComponent,
         HeaderComponent,
         HrAreaComponent,
-        PayrollAreaComponent,
-        LoginComponent
+        PayrollAreaComponent
     ],
     imports: [
         CommonModule,
@@ -37,12 +31,16 @@ import { LoginComponent } from './components/login/login.component';
             { path: '', redirectTo: 'login', pathMatch: 'full' },
             { path: 'login', component: LoginComponent },
             { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
             { path: 'Contact-form', component: ContactComponent },
             { path: 'footer', component: FooterComponent },
-            { path: 'hr-area', component: HrAreaComponent },
-            { path: 'payroll-area', component: PayrollAreaComponent },
+            { path: 'hr-area', component: HrAreaComponent }, 
+            { path: 'payroll-area', component: PayrollAreaComponent }, 
+            { path: 'production', component: ProductionAreaComponent }, 
+            { path: 'inventory', component: InventoryAreaComponent }, 
+            { path: 'general-ledger', component: GeneralLedgerAreaComponent }, 
+            { path: 'purchase', component: PurchaseAreaComponent }, 
+            { path: 'sale', component: SaleAreaComponent },
+            { path: 'fixed-assets', component: FixedAssetsAreaComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
