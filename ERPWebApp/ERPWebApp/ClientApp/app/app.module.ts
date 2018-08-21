@@ -27,15 +27,15 @@ import { LoginComponent } from './components/login/login.component';
         HeaderComponent,
         HrAreaComponent,
         PayrollAreaComponent,
-       
+        LoginComponent
     ],
     imports: [
         CommonModule,
         HttpModule,
         FormsModule,
         RouterModule.forRoot([
-            //{ path: '', redirectTo: 'home', pathMatch: 'full' },
-            //{ path: '', component: LoginComponent },
+            { path: '', redirectTo: 'login', pathMatch: 'full' },
+            { path: 'login', component: LoginComponent },
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
