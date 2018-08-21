@@ -7,5 +7,12 @@ import { Router } from '@angular/router';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   
+    public href1: string = "";
+    constructor(private router1: Router) { }
+
+    ngOnInit() {
+        this.href1 = this.router1.url;
+       
+        console.log(this.router1.url);
+    }
 }

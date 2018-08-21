@@ -19,6 +19,7 @@ import { GeneralLedgerAreaComponent } from './components/general-ledger/general-
 import { PurchaseAreaComponent } from './components/purchase/purchase-area/purchase-area.component';
 import { SaleAreaComponent } from './components/sales/sale-area/sale-area.component';
 import { FixedAssetsAreaComponent } from './components/fixed-assets/fixed-assets-area/fixed-assets-area.component';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -35,14 +36,16 @@ import { FixedAssetsAreaComponent } from './components/fixed-assets/fixed-assets
         PurchaseAreaComponent,
         SaleAreaComponent,
         FixedAssetsAreaComponent,
+        LoginComponent
     ],
     imports: [
         CommonModule,
         HttpModule,
         FormsModule,
         RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
+            { path: '', redirectTo: 'login', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
+            { path: 'login', component: LoginComponent },
             { path: 'Contact-form', component: ContactComponent },
             { path: 'footer', component: FooterComponent },
             { path: 'hr-area', component: HrAreaComponent },
